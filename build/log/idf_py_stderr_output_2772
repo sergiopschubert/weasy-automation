@@ -1,0 +1,13 @@
+CMake Error:
+  Running
+
+   'C:/Users/sergi/.espressif/tools/ninja/1.11.1/ninja.exe' '-C' 'C:/Users/sergi/projetos/weasy-automation/weazy-automation/build' '-t' 'restat' 'build.ninja'
+
+  failed with:
+
+   ninja: error: failed recompaction: Permission denied
+
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: rebuilding 'build.ninja': subcommand failed

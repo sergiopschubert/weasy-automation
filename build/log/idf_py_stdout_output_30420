@@ -1,0 +1,1723 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080638
+[0;32mI (31) boot: ESP-IDF 5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct  9 2024 18:47:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22814h (141332) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0003283c vaddr=3ffb0000 size=03c5ch ( 15452) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000364a0 vaddr=40080000 size=09b78h ( 39800) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=875a8h (554408) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c75d0 vaddr=40089b78 size=0cb2ch ( 52012) load[0m
+[0;32mI (396) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (397) boot: Disabling RNG early entropy source...[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (417) cpu_start: Pro cpu start user code[0m
+[0;32mI (417) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (417) cpu_start: Application information:[0m
+[0;32mI (420) cpu_start: Project name:     weazy-automation[0m
+[0;32mI (426) cpu_start: App version:      1[0m
+[0;32mI (430) cpu_start: Compile time:     Oct  9 2024 18:38:16[0m
+[0;32mI (436) cpu_start: ELF file SHA256:  38ca302c2...[0m
+[0;32mI (442) cpu_start: ESP-IDF:          5.2.1[0m
+[0;32mI (446) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (451) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (456) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (461) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (468) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (474) heap_init: At 3FFB82C8 len 00027D38 (159 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 400966A4 len 0000995C (38 KiB): IRAM[0m
+[0;32mI (501) spi_flash: detected chip: generic[0m
+[0;32mI (504) spi_flash: flash io: dio[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[0;32mI (559) wifi:wifi driver task: 3ffc139c, prio:23, stack:6656, core=0[0m
+[0;32mI (569) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (579) wifi:wifi certification version: v7.0[0m
+[0;32mI (579) wifi:config NVS flash: enabled[0m
+[0;32mI (579) wifi:config nano formating: disabled[0m
+[0;32mI (579) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (579) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (589) wifi:Init management short buffer num: 32[0m
+[0;32mI (589) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (599) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (599) wifi:Init static rx buffer num: 10[0m
+[0;32mI (599) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (609) wifi_init: rx ba win: 6[0m
+[0;32mI (609) wifi_init: tcpip mbox: 32[0m
+[0;32mI (619) wifi_init: udp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5760[0m
+[0;32mI (629) wifi_init: tcp rx win: 5760[0m
+[0;32mI (629) wifi_init: tcp mss: 1440[0m
+[0;32mI (639) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (639) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (649) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (739) wifi:mode : sta (88:13:bf:07:c8:84)[0m
+[0;32mI (739) wifi:enable tsf[0m
+[0;32mI (739) wifi_manager: Wi-Fi iniciado, conectando-se ao SSID: APARTAMENTO 233 - 2.4G[0m
+[0;32mI (739) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (759) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (759) wifi:state: init -> auth (b0)[0m
+[0;32mI (789) wifi:state: auth -> assoc (0)[0m
+[0;32mI (809) wifi:state: assoc -> run (10)[0m
+[0;33mW (829) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (829) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;32mI (919) wifi:connected with APARTAMENTO 233 - 2.4G, aid = 4, channel 6, BW20, bssid = f4:54:20:ef:29:bf[0m
+[0;32mI (919) wifi:security: WPA2-PSK, phy: bgn, rssi: -81[0m
+[0;32mI (929) wifi:pm start, type: 1[0m
+
+[0;32mI (929) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (989) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1109) wifi:<ba-add>idx:0 (ifx:0, f4:54:20:ef:29:bf), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2939) esp_netif_handlers: sta ip: 192.168.15.5, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2939) wifi_manager: Conectado com sucesso, IP obtido: 192.168.15.5[0m
+[0;32mI (2939) state_machine: Estado: INIT[0m
+[0;32mI (3049) STATE_MACHINE: Estado atual: STATE_GET_TIME[0m
+[0;32mI (3049) state_machine: Estado: GET_TIME[0m
+[0;32mI (3049) time_manager: Inicializando SNTP[0m
+[0;32mI (3049) state_machine: Aguardando sincronização de hora (1/10)...[0m
+[0;32mI (4559) state_machine: Aguardando sincronização de hora (2/10)...[0m
+[0;32mI (6059) state_machine: Aguardando sincronização de hora (3/10)...[0m
+[0;32mI (6219) time_manager: Hora sincronizada[0m
+[0;32mI (7559) state_machine: Hora atual obtida: Thu Oct 10 02:04:55 2024[0m
+[0;32mI (7659) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (7659) AGUARDANDO: Aguardando...[0m
+[0;32mI (9259) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (9259) AGUARDANDO: Aguardando...[0m
+[0;32mI (10749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (10859) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (10859) AGUARDANDO: Aguardando...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080638
+[0;32mI (31) boot: ESP-IDF 5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct  9 2024 18:47:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22814h (141332) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0003283c vaddr=3ffb0000 size=03c5ch ( 15452) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000364a0 vaddr=40080000 size=09b78h ( 39800) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=875a8h (554408) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c75d0 vaddr=40089b78 size=0cb2ch ( 52012) load[0m
+[0;32mI (396) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (397) boot: Disabling RNG early entropy source...[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (417) cpu_start: Pro cpu start user code[0m
+[0;32mI (417) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (417) cpu_start: Application information:[0m
+[0;32mI (420) cpu_start: Project name:     weazy-automation[0m
+[0;32mI (426) cpu_start: App version:      1[0m
+[0;32mI (430) cpu_start: Compile time:     Oct  9 2024 18:38:16[0m
+[0;32mI (436) cpu_start: ELF file SHA256:  38ca302c2...[0m
+[0;32mI (442) cpu_start: ESP-IDF:          5.2.1[0m
+[0;32mI (446) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (451) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (456) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (461) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (468) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (474) heap_init: At 3FFB82C8 len 00027D38 (159 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 400966A4 len 0000995C (38 KiB): IRAM[0m
+[0;32mI (501) spi_flash: detected chip: generic[0m
+[0;32mI (504) spi_flash: flash io: dio[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[0;32mI (559) wifi:wifi driver task: 3ffc139c, prio:23, stack:6656, core=0[0m
+[0;32mI (569) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (579) wifi:wifi certification version: v7.0[0m
+[0;32mI (579) wifi:config NVS flash: enabled[0m
+[0;32mI (579) wifi:config nano formating: disabled[0m
+[0;32mI (579) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (579) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (589) wifi:Init management short buffer num: 32[0m
+[0;32mI (589) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (599) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (599) wifi:Init static rx buffer num: 10[0m
+[0;32mI (599) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (609) wifi_init: rx ba win: 6[0m
+[0;32mI (609) wifi_init: tcpip mbox: 32[0m
+[0;32mI (619) wifi_init: udp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5760[0m
+[0;32mI (629) wifi_init: tcp rx win: 5760[0m
+[0;32mI (629) wifi_init: tcp mss: 1440[0m
+[0;32mI (639) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (639) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (649) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (739) wifi:mode : sta (88:13:bf:07:c8:84)[0m
+[0;32mI (739) wifi:enable tsf[0m
+[0;32mI (739) wifi_manager: Wi-Fi iniciado, conectando-se ao SSID: APARTAMENTO 233 - 2.4G[0m
+[0;32mI (739) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (759) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (759) wifi:state: init -> auth (b0)[0m
+[0;32mI (799) wifi:state: auth -> assoc (0)[0m
+[0;32mI (839) wifi:state: assoc -> run (10)[0m
+[0;33mW (849) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (849) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;32mI (979) wifi:connected with APARTAMENTO 233 - 2.4G, aid = 4, channel 6, BW20, bssid = f4:54:20:ef:29:bf[0m
+[0;32mI (979) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (989) wifi:pm start, type: 1[0m
+
+[0;32mI (989) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1189) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1219) wifi:<ba-add>idx:0 (ifx:0, f4:54:20:ef:29:bf), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2999) esp_netif_handlers: sta ip: 192.168.15.5, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2999) wifi_manager: Conectado com sucesso, IP obtido: 192.168.15.5[0m
+[0;32mI (2999) state_machine: Estado: INIT[0m
+[0;32mI (3109) STATE_MACHINE: Estado atual: STATE_GET_TIME[0m
+[0;32mI (3109) state_machine: Estado: GET_TIME[0m
+[0;32mI (3109) time_manager: Inicializando SNTP[0m
+[0;32mI (3109) state_machine: Aguardando sincronização de hora (1/10)...[0m
+[0;32mI (4579) time_manager: Hora sincronizada[0m
+[0;32mI (4619) state_machine: Hora atual obtida: Thu Oct 10 02:05:05 2024[0m
+[0;32mI (4719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (4719) AGUARDANDO: Aguardando...[0m
+[0;32mI (6319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (6319) AGUARDANDO: Aguardando...[0m
+[0;32mI (7919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (7919) AGUARDANDO: Aguardando...[0m
+[0;32mI (9519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (9519) AGUARDANDO: Aguardando...[0m
+[0;32mI (10749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (11119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (11119) AGUARDANDO: Aguardando...[0m
+[0;32mI (12719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (12719) AGUARDANDO: Aguardando...[0m
+[0;32mI (14319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (14319) AGUARDANDO: Aguardando...[0m
+[0;32mI (15919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (15919) AGUARDANDO: Aguardando...[0m
+[0;32mI (17519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (17519) AGUARDANDO: Aguardando...[0m
+[0;32mI (19119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (19119) AGUARDANDO: Aguardando...[0m
+[0;32mI (20719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (20719) AGUARDANDO: Aguardando...[0m
+[0;32mI (20749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (22319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (22319) AGUARDANDO: Aguardando...[0m
+[0;32mI (23919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (23919) AGUARDANDO: Aguardando...[0m
+[0;32mI (25519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (25519) AGUARDANDO: Aguardando...[0m
+[0;32mI (27119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (27119) AGUARDANDO: Aguardando...[0m
+[0;32mI (28719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (28719) AGUARDANDO: Aguardando...[0m
+[0;32mI (30319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (30319) AGUARDANDO: Aguardando...[0m
+[0;32mI (30749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (31919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (31919) AGUARDANDO: Aguardando...[0m
+[0;32mI (33519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (33519) AGUARDANDO: Aguardando...[0m
+[0;32mI (35119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (35119) AGUARDANDO: Aguardando...[0m
+[0;32mI (36719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (36719) AGUARDANDO: Aguardando...[0m
+[0;32mI (38319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (38319) AGUARDANDO: Aguardando...[0m
+[0;32mI (39919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (39919) AGUARDANDO: Aguardando...[0m
+[0;32mI (40749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (41519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (41519) AGUARDANDO: Aguardando...[0m
+[0;32mI (43119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (43119) AGUARDANDO: Aguardando...[0m
+[0;32mI (44719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (44719) AGUARDANDO: Aguardando...[0m
+[0;32mI (46319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (46319) AGUARDANDO: Aguardando...[0m
+[0;32mI (47919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (47919) AGUARDANDO: Aguardando...[0m
+[0;32mI (49519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (49519) AGUARDANDO: Aguardando...[0m
+[0;32mI (50749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (51119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (51119) AGUARDANDO: Aguardando...[0m
+[0;32mI (52719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (52719) AGUARDANDO: Aguardando...[0m
+[0;32mI (54319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (54319) AGUARDANDO: Aguardando...[0m
+[0;32mI (55919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (55919) AGUARDANDO: Aguardando...[0m
+[0;32mI (57519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (57519) AGUARDANDO: Aguardando...[0m
+[0;32mI (59119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (59119) AGUARDANDO: Aguardando...[0m
+[0;32mI (60719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (60719) AGUARDANDO: Aguardando...[0m
+[0;32mI (60749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (62319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (62319) AGUARDANDO: Aguardando...[0m
+[0;32mI (63919) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (63919) AGUARDANDO: Aguardando...[0m
+[0;32mI (65519) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (65519) AGUARDANDO: Aguardando...[0m
+[0;32mI (67119) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (67119) AGUARDANDO: Aguardando...[0m
+[0;32mI (68719) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (68719) AGUARDANDO: Aguardando...[0m
+[0;32mI (70319) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (70319) AGUARDANDO: Aguardando...[0m
+[0;32mI (3159) wifi_manager: Tentando reconectar ao Wi-Fi...[0m
+[0;32mI (3249) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3249) wifi:state: init -> auth (b0)[0m
+[0;32mI (3259) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3289) wifi:state: assoc -> run (10)[0m
+[0;33mW (3349) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (3349) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;32mI (3399) wifi:connected with APARTAMENTO 233 - 2.4G, aid = 4, channel 6, BW20, bssid = f4:54:20:ef:29:bf[0m
+[0;32mI (3399) wifi:security: WPA2-PSK, phy: bgn, rssi: -88[0m
+[0;32mI (3409) wifi:pm start, type: 1[0m
+
+[0;32mI (3409) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3449) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (3669) wifi:<ba-add>idx:0 (ifx:0, f4:54:20:ef:29:bf), tid:0, ssn:2, winSize:64[0m
+[0;32mI (5419) esp_netif_handlers: sta ip: 192.168.15.5, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (5419) wifi_manager: Conectado com sucesso, IP obtido: 192.168.15.5[0m
+[0;32mI (5419) state_machine: Estado: INIT[0m
+[0;32mI (5529) STATE_MACHINE: Estado atual: STATE_GET_TIME[0m
+[0;32mI (5529) state_machine: Estado: GET_TIME[0m
+[0;32mI (5529) time_manager: Inicializando SNTP[0m
+[0;32mI (5529) state_machine: Aguardando sincronização de hora (1/10)...[0m
+[0;32mI (7039) state_machine: Aguardando sincronização de hora (2/10)...[0m
+[0;32mI (8539) state_machine: Aguardando sincronização de hora (3/10)...[0m
+[0;32mI (8669) time_manager: Hora sincronizada[0m
+[0;32mI (10039) state_machine: Hora atual obtida: Thu Oct 10 02:06:22 2024[0m
+[0;32mI (10139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (10139) AGUARDANDO: Aguardando...[0m
+[0;32mI (10749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (11739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (11739) AGUARDANDO: Aguardando...[0m
+[0;32mI (13339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (13339) AGUARDANDO: Aguardando...[0m
+[0;32mI (14939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (14939) AGUARDANDO: Aguardando...[0m
+[0;32mI (16539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (16539) AGUARDANDO: Aguardando...[0m
+[0;32mI (18139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (18139) AGUARDANDO: Aguardando...[0m
+[0;32mI (19739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (19739) AGUARDANDO: Aguardando...[0m
+[0;32mI (20749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (21339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (21339) AGUARDANDO: Aguardando...[0m
+[0;32mI (22939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (22939) AGUARDANDO: Aguardando...[0m
+[0;32mI (24539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (24539) AGUARDANDO: Aguardando...[0m
+[0;32mI (26139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (26139) AGUARDANDO: Aguardando...[0m
+[0;32mI (27739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (27739) AGUARDANDO: Aguardando...[0m
+[0;32mI (29339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (29339) AGUARDANDO: Aguardando...[0m
+[0;32mI (30749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (30939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (30939) AGUARDANDO: Aguardando...[0m
+[0;32mI (32539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (32539) AGUARDANDO: Aguardando...[0m
+[0;32mI (34139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (34139) AGUARDANDO: Aguardando...[0m
+[0;32mI (35739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (35739) AGUARDANDO: Aguardando...[0m
+[0;32mI (37339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (37339) AGUARDANDO: Aguardando...[0m
+[0;32mI (38939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (38939) AGUARDANDO: Aguardando...[0m
+[0;32mI (40539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (40539) AGUARDANDO: Aguardando...[0m
+[0;32mI (40749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (42139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (42139) AGUARDANDO: Aguardando...[0m
+[0;32mI (43739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (43739) AGUARDANDO: Aguardando...[0m
+[0;32mI (45339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (45339) AGUARDANDO: Aguardando...[0m
+[0;32mI (46939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (46939) AGUARDANDO: Aguardando...[0m
+[0;32mI (48539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (48539) AGUARDANDO: Aguardando...[0m
+[0;32mI (50139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (50139) AGUARDANDO: Aguardando...[0m
+[0;32mI (50749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (51739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (51739) AGUARDANDO: Aguardando...[0m
+[0;32mI (53339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (53339) AGUARDANDO: Aguardando...[0m
+[0;32mI (54939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (54939) AGUARDANDO: Aguardando...[0m
+[0;32mI (56539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (56539) AGUARDANDO: Aguardando...[0m
+[0;32mI (58139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (58139) AGUARDANDO: Aguardando...[0m
+[0;32mI (59739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (59739) AGUARDANDO: Aguardando...[0m
+[0;32mI (60749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (61339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (61339) AGUARDANDO: Aguardando...[0m
+[0;32mI (62939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (62939) AGUARDANDO: Aguardando...[0m
+[0;32mI (64539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (64539) AGUARDANDO: Aguardando...[0m
+[0;32mI (66139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (66139) AGUARDANDO: Aguardando...[0m
+[0;32mI (67739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (67739) AGUARDANDO: Aguardando...[0m
+[0;32mI (69339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (69339) AGUARDANDO: Aguardando...[0m
+[0;32mI (70749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (70939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (70939) AGUARDANDO: Aguardando...[0m
+[0;32mI (72539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (72539) AGUARDANDO: Aguardando...[0m
+[0;32mI (74139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (74139) AGUARDANDO: Aguardando...[0m
+[0;32mI (75739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (75739) AGUARDANDO: Aguardando...[0m
+[0;32mI (77339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (77339) AGUARDANDO: Aguardando...[0m
+[0;32mI (78939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (78939) AGUARDANDO: Aguardando...[0m
+[0;32mI (80539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (80539) AGUARDANDO: Aguardando...[0m
+[0;32mI (80749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (82139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (82139) AGUARDANDO: Aguardando...[0m
+[0;32mI (83739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (83739) AGUARDANDO: Aguardando...[0m
+[0;32mI (85339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (85339) AGUARDANDO: Aguardando...[0m
+[0;32mI (86939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (86939) AGUARDANDO: Aguardando...[0m
+[0;32mI (88539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (88539) AGUARDANDO: Aguardando...[0m
+[0;32mI (90139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (90139) AGUARDANDO: Aguardando...[0m
+[0;32mI (90749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (91739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (91739) AGUARDANDO: Aguardando...[0m
+[0;32mI (93339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (93339) AGUARDANDO: Aguardando...[0m
+[0;32mI (94939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (94939) AGUARDANDO: Aguardando...[0m
+[0;32mI (96539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (96539) AGUARDANDO: Aguardando...[0m
+[0;32mI (98139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (98139) AGUARDANDO: Aguardando...[0m
+[0;32mI (99739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (99739) AGUARDANDO: Aguardando...[0m
+[0;32mI (100749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (101339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (101339) AGUARDANDO: Aguardando...[0m
+[0;32mI (102939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (102939) AGUARDANDO: Aguardando...[0m
+[0;32mI (104539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (104539) AGUARDANDO: Aguardando...[0m
+[0;32mI (106139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (106139) AGUARDANDO: Aguardando...[0m
+[0;32mI (107739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (107739) AGUARDANDO: Aguardando...[0m
+[0;32mI (109339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (109339) AGUARDANDO: Aguardando...[0m
+[0;32mI (110749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (110939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (110939) AGUARDANDO: Aguardando...[0m
+[0;32mI (112539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (112539) AGUARDANDO: Aguardando...[0m
+[0;32mI (114139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (114139) AGUARDANDO: Aguardando...[0m
+[0;32mI (115739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (115739) AGUARDANDO: Aguardando...[0m
+[0;32mI (117339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (117339) AGUARDANDO: Aguardando...[0m
+[0;32mI (118939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (118939) AGUARDANDO: Aguardando...[0m
+[0;32mI (120539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (120539) AGUARDANDO: Aguardando...[0m
+[0;32mI (120749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (122139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (122139) AGUARDANDO: Aguardando...[0m
+[0;32mI (123739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (123739) AGUARDANDO: Aguardando...[0m
+[0;32mI (125339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (125339) AGUARDANDO: Aguardando...[0m
+[0;32mI (126939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (126939) AGUARDANDO: Aguardando...[0m
+[0;32mI (128539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (128539) AGUARDANDO: Aguardando...[0m
+[0;32mI (130139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (130139) AGUARDANDO: Aguardando...[0m
+[0;32mI (130749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (131739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (131739) AGUARDANDO: Aguardando...[0m
+[0;32mI (133339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (133339) AGUARDANDO: Aguardando...[0m
+[0;32mI (134939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (134939) AGUARDANDO: Aguardando...[0m
+[0;32mI (136539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (136539) AGUARDANDO: Aguardando...[0m
+[0;32mI (138139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (138139) AGUARDANDO: Aguardando...[0m
+[0;32mI (139739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (139739) AGUARDANDO: Aguardando...[0m
+[0;32mI (140749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (141339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (141339) AGUARDANDO: Aguardando...[0m
+[0;32mI (142939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (142939) AGUARDANDO: Aguardando...[0m
+[0;32mI (144539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (144539) AGUARDANDO: Aguardando...[0m
+[0;32mI (146139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (146139) AGUARDANDO: Aguardando...[0m
+[0;32mI (147739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (147739) AGUARDANDO: Aguardando...[0m
+[0;32mI (149339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (149339) AGUARDANDO: Aguardando...[0m
+[0;32mI (150749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (150939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (150939) AGUARDANDO: Aguardando...[0m
+[0;32mI (152539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (152539) AGUARDANDO: Aguardando...[0m
+[0;32mI (154139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (154139) AGUARDANDO: Aguardando...[0m
+[0;32mI (155739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (155739) AGUARDANDO: Aguardando...[0m
+[0;32mI (157339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (157339) AGUARDANDO: Aguardando...[0m
+[0;32mI (158939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (158939) AGUARDANDO: Aguardando...[0m
+[0;32mI (160539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (160539) AGUARDANDO: Aguardando...[0m
+[0;32mI (160749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (162139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (162139) AGUARDANDO: Aguardando...[0m
+[0;32mI (163739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (163739) AGUARDANDO: Aguardando...[0m
+[0;32mI (165339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (165339) AGUARDANDO: Aguardando...[0m
+[0;32mI (166939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (166939) AGUARDANDO: Aguardando...[0m
+[0;32mI (168539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (168539) AGUARDANDO: Aguardando...[0m
+[0;32mI (170139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (170139) AGUARDANDO: Aguardando...[0m
+[0;32mI (170749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (171739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (171739) AGUARDANDO: Aguardando...[0m
+[0;32mI (173339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (173339) AGUARDANDO: Aguardando...[0m
+[0;32mI (174939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (174939) AGUARDANDO: Aguardando...[0m
+[0;32mI (176539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (176539) AGUARDANDO: Aguardando...[0m
+[0;32mI (178139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (178139) AGUARDANDO: Aguardando...[0m
+[0;32mI (179739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (179739) AGUARDANDO: Aguardando...[0m
+[0;32mI (180749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (181339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (181339) AGUARDANDO: Aguardando...[0m
+[0;32mI (182939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (182939) AGUARDANDO: Aguardando...[0m
+[0;32mI (184539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (184539) AGUARDANDO: Aguardando...[0m
+[0;32mI (186139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (186139) AGUARDANDO: Aguardando...[0m
+[0;32mI (187739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (187739) AGUARDANDO: Aguardando...[0m
+[0;32mI (189339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (189339) AGUARDANDO: Aguardando...[0m
+[0;32mI (190749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (190939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (190939) AGUARDANDO: Aguardando...[0m
+[0;32mI (192539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (192539) AGUARDANDO: Aguardando...[0m
+[0;32mI (194139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (194139) AGUARDANDO: Aguardando...[0m
+[0;32mI (195739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (195739) AGUARDANDO: Aguardando...[0m
+[0;32mI (197339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (197339) AGUARDANDO: Aguardando...[0m
+[0;32mI (198939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (198939) AGUARDANDO: Aguardando...[0m
+[0;32mI (200539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (200539) AGUARDANDO: Aguardando...[0m
+[0;32mI (200749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (202139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (202139) AGUARDANDO: Aguardando...[0m
+[0;32mI (203739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (203739) AGUARDANDO: Aguardando...[0m
+[0;32mI (205339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (205339) AGUARDANDO: Aguardando...[0m
+[0;32mI (206939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (206939) AGUARDANDO: Aguardando...[0m
+[0;32mI (208539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (208539) AGUARDANDO: Aguardando...[0m
+[0;32mI (210139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (210139) AGUARDANDO: Aguardando...[0m
+[0;32mI (210749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (211739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (211739) AGUARDANDO: Aguardando...[0m
+[0;32mI (213339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (213339) AGUARDANDO: Aguardando...[0m
+[0;32mI (214939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (214939) AGUARDANDO: Aguardando...[0m
+[0;32mI (216539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (216539) AGUARDANDO: Aguardando...[0m
+[0;32mI (218139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (218139) AGUARDANDO: Aguardando...[0m
+[0;32mI (219739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (219739) AGUARDANDO: Aguardando...[0m
+[0;32mI (220749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (221339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (221339) AGUARDANDO: Aguardando...[0m
+[0;32mI (222939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (222939) AGUARDANDO: Aguardando...[0m
+[0;32mI (224539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (224539) AGUARDANDO: Aguardando...[0m
+[0;32mI (226139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (226139) AGUARDANDO: Aguardando...[0m
+[0;32mI (227739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (227739) AGUARDANDO: Aguardando...[0m
+[0;32mI (229339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (229339) AGUARDANDO: Aguardando...[0m
+[0;32mI (230749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (230939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (230939) AGUARDANDO: Aguardando...[0m
+[0;32mI (232539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (232539) AGUARDANDO: Aguardando...[0m
+[0;32mI (234139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (234139) AGUARDANDO: Aguardando...[0m
+[0;32mI (235739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (235739) AGUARDANDO: Aguardando...[0m
+[0;32mI (237339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (237339) AGUARDANDO: Aguardando...[0m
+[0;32mI (238939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (238939) AGUARDANDO: Aguardando...[0m
+[0;32mI (240539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (240539) AGUARDANDO: Aguardando...[0m
+[0;32mI (240749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (242139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (242139) AGUARDANDO: Aguardando...[0m
+[0;32mI (243739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (243739) AGUARDANDO: Aguardando...[0m
+[0;32mI (245339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (245339) AGUARDANDO: Aguardando...[0m
+[0;32mI (246939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (246939) AGUARDANDO: Aguardando...[0m
+[0;32mI (248539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (248539) AGUARDANDO: Aguardando...[0m
+[0;32mI (250139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (250139) AGUARDANDO: Aguardando...[0m
+[0;32mI (250749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (251739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (251739) AGUARDANDO: Aguardando...[0m
+[0;32mI (253339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (253339) AGUARDANDO: Aguardando...[0m
+[0;32mI (254939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (254939) AGUARDANDO: Aguardando...[0m
+[0;32mI (256539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (256539) AGUARDANDO: Aguardando...[0m
+[0;32mI (258139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (258139) AGUARDANDO: Aguardando...[0m
+[0;32mI (259739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (259739) AGUARDANDO: Aguardando...[0m
+[0;32mI (260749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (261339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (261339) AGUARDANDO: Aguardando...[0m
+[0;32mI (262939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (262939) AGUARDANDO: Aguardando...[0m
+[0;32mI (264539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (264539) AGUARDANDO: Aguardando...[0m
+[0;32mI (266139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (266139) AGUARDANDO: Aguardando...[0m
+[0;32mI (267739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (267739) AGUARDANDO: Aguardando...[0m
+[0;32mI (269339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (269339) AGUARDANDO: Aguardando...[0m
+[0;32mI (270749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (270939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (270939) AGUARDANDO: Aguardando...[0m
+[0;32mI (272539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (272539) AGUARDANDO: Aguardando...[0m
+[0;32mI (274139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (274139) AGUARDANDO: Aguardando...[0m
+[0;32mI (275739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (275739) AGUARDANDO: Aguardando...[0m
+[0;32mI (277339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (277339) AGUARDANDO: Aguardando...[0m
+[0;32mI (278939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (278939) AGUARDANDO: Aguardando...[0m
+[0;32mI (280539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (280539) AGUARDANDO: Aguardando...[0m
+[0;32mI (280749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (282139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (282139) AGUARDANDO: Aguardando...[0m
+[0;32mI (283739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (283739) AGUARDANDO: Aguardando...[0m
+[0;32mI (285339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (285339) AGUARDANDO: Aguardando...[0m
+[0;32mI (286939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (286939) AGUARDANDO: Aguardando...[0m
+[0;32mI (288539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (288539) AGUARDANDO: Aguardando...[0m
+[0;32mI (290139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (290139) AGUARDANDO: Aguardando...[0m
+[0;32mI (290749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (291739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (291739) AGUARDANDO: Aguardando...[0m
+[0;32mI (293339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (293339) AGUARDANDO: Aguardando...[0m
+[0;32mI (294939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (294939) AGUARDANDO: Aguardando...[0m
+[0;32mI (296539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (296539) AGUARDANDO: Aguardando...[0m
+[0;32mI (298139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (298139) AGUARDANDO: Aguardando...[0m
+[0;32mI (299739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (299739) AGUARDANDO: Aguardando...[0m
+[0;32mI (300749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (301339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (301339) AGUARDANDO: Aguardando...[0m
+[0;32mI (302939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (302939) AGUARDANDO: Aguardando...[0m
+[0;32mI (304539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (304539) AGUARDANDO: Aguardando...[0m
+[0;32mI (306139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (306139) AGUARDANDO: Aguardando...[0m
+[0;32mI (307739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (307739) AGUARDANDO: Aguardando...[0m
+[0;32mI (309339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (309339) AGUARDANDO: Aguardando...[0m
+[0;32mI (310749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (310939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (310939) AGUARDANDO: Aguardando...[0m
+[0;32mI (312539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (312539) AGUARDANDO: Aguardando...[0m
+[0;32mI (314139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (314139) AGUARDANDO: Aguardando...[0m
+[0;32mI (315739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (315739) AGUARDANDO: Aguardando...[0m
+[0;32mI (317339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (317339) AGUARDANDO: Aguardando...[0m
+[0;32mI (318939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (318939) AGUARDANDO: Aguardando...[0m
+[0;32mI (320539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (320539) AGUARDANDO: Aguardando...[0m
+[0;32mI (320749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (322139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (322139) AGUARDANDO: Aguardando...[0m
+[0;32mI (323739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (323739) AGUARDANDO: Aguardando...[0m
+[0;32mI (325339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (325339) AGUARDANDO: Aguardando...[0m
+[0;32mI (326939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (326939) AGUARDANDO: Aguardando...[0m
+[0;32mI (328539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (328539) AGUARDANDO: Aguardando...[0m
+[0;32mI (330139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (330139) AGUARDANDO: Aguardando...[0m
+[0;32mI (330749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (331739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (331739) AGUARDANDO: Aguardando...[0m
+[0;32mI (333339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (333339) AGUARDANDO: Aguardando...[0m
+[0;32mI (334939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (334939) AGUARDANDO: Aguardando...[0m
+[0;32mI (336539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (336539) AGUARDANDO: Aguardando...[0m
+[0;32mI (338139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (338139) AGUARDANDO: Aguardando...[0m
+[0;32mI (339739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (339739) AGUARDANDO: Aguardando...[0m
+[0;32mI (340749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (341339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (341339) AGUARDANDO: Aguardando...[0m
+[0;32mI (342939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (342939) AGUARDANDO: Aguardando...[0m
+[0;32mI (344539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (344539) AGUARDANDO: Aguardando...[0m
+[0;32mI (346139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (346139) AGUARDANDO: Aguardando...[0m
+[0;32mI (347739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (347739) AGUARDANDO: Aguardando...[0m
+[0;32mI (349339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (349339) AGUARDANDO: Aguardando...[0m
+[0;32mI (350749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (350939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (350939) AGUARDANDO: Aguardando...[0m
+[0;32mI (352539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (352539) AGUARDANDO: Aguardando...[0m
+[0;32mI (354139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (354139) AGUARDANDO: Aguardando...[0m
+[0;32mI (355739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (355739) AGUARDANDO: Aguardando...[0m
+[0;32mI (357339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (357339) AGUARDANDO: Aguardando...[0m
+[0;32mI (358939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (358939) AGUARDANDO: Aguardando...[0m
+[0;32mI (360539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (360539) AGUARDANDO: Aguardando...[0m
+[0;32mI (360749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (362139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (362139) AGUARDANDO: Aguardando...[0m
+[0;32mI (363739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (363739) AGUARDANDO: Aguardando...[0m
+[0;32mI (365339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (365339) AGUARDANDO: Aguardando...[0m
+[0;32mI (366939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (366939) AGUARDANDO: Aguardando...[0m
+[0;32mI (368539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (368539) AGUARDANDO: Aguardando...[0m
+[0;32mI (370139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (370139) AGUARDANDO: Aguardando...[0m
+[0;32mI (370749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (371739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (371739) AGUARDANDO: Aguardando...[0m
+[0;32mI (373339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (373339) AGUARDANDO: Aguardando...[0m
+[0;32mI (374939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (374939) AGUARDANDO: Aguardando...[0m
+[0;32mI (376539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (376539) AGUARDANDO: Aguardando...[0m
+[0;32mI (378139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (378139) AGUARDANDO: Aguardando...[0m
+[0;32mI (379739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (379739) AGUARDANDO: Aguardando...[0m
+[0;32mI (380749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (381339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (381339) AGUARDANDO: Aguardando...[0m
+[0;32mI (382939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (382939) AGUARDANDO: Aguardando...[0m
+[0;32mI (384539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (384539) AGUARDANDO: Aguardando...[0m
+[0;32mI (386139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (386139) AGUARDANDO: Aguardando...[0m
+[0;32mI (387739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (387739) AGUARDANDO: Aguardando...[0m
+[0;32mI (389339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (389339) AGUARDANDO: Aguardando...[0m
+[0;32mI (390749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (390939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (390939) AGUARDANDO: Aguardando...[0m
+[0;32mI (392539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (392539) AGUARDANDO: Aguardando...[0m
+[0;32mI (394139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (394139) AGUARDANDO: Aguardando...[0m
+[0;32mI (395739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (395739) AGUARDANDO: Aguardando...[0m
+[0;32mI (397339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (397339) AGUARDANDO: Aguardando...[0m
+[0;32mI (398939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (398939) AGUARDANDO: Aguardando...[0m
+[0;32mI (400539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (400539) AGUARDANDO: Aguardando...[0m
+[0;32mI (400749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (402139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (402139) AGUARDANDO: Aguardando...[0m
+[0;32mI (403739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (403739) AGUARDANDO: Aguardando...[0m
+[0;32mI (405339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (405339) AGUARDANDO: Aguardando...[0m
+[0;32mI (406939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (406939) AGUARDANDO: Aguardando...[0m
+[0;32mI (408539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (408539) AGUARDANDO: Aguardando...[0m
+[0;32mI (410139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (410139) AGUARDANDO: Aguardando...[0m
+[0;32mI (410749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (411739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (411739) AGUARDANDO: Aguardando...[0m
+[0;32mI (413339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (413339) AGUARDANDO: Aguardando...[0m
+[0;32mI (414939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (414939) AGUARDANDO: Aguardando...[0m
+[0;32mI (416539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (416539) AGUARDANDO: Aguardando...[0m
+[0;32mI (418139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (418139) AGUARDANDO: Aguardando...[0m
+[0;32mI (419739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (419739) AGUARDANDO: Aguardando...[0m
+[0;32mI (420749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (421339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (421339) AGUARDANDO: Aguardando...[0m
+[0;32mI (422939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (422939) AGUARDANDO: Aguardando...[0m
+[0;32mI (424539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (424539) AGUARDANDO: Aguardando...[0m
+[0;32mI (426139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (426139) AGUARDANDO: Aguardando...[0m
+[0;32mI (427739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (427739) AGUARDANDO: Aguardando...[0m
+[0;32mI (429339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (429339) AGUARDANDO: Aguardando...[0m
+[0;32mI (430749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (430939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (430939) AGUARDANDO: Aguardando...[0m
+[0;32mI (432539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (432539) AGUARDANDO: Aguardando...[0m
+[0;32mI (434139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (434139) AGUARDANDO: Aguardando...[0m
+[0;32mI (435739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (435739) AGUARDANDO: Aguardando...[0m
+[0;32mI (437339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (437339) AGUARDANDO: Aguardando...[0m
+[0;32mI (438939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (438939) AGUARDANDO: Aguardando...[0m
+[0;32mI (440539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (440539) AGUARDANDO: Aguardando...[0m
+[0;32mI (440749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (442139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (442139) AGUARDANDO: Aguardando...[0m
+[0;32mI (443739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (443739) AGUARDANDO: Aguardando...[0m
+[0;32mI (445339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (445339) AGUARDANDO: Aguardando...[0m
+[0;32mI (446939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (446939) AGUARDANDO: Aguardando...[0m
+[0;32mI (448539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (448539) AGUARDANDO: Aguardando...[0m
+[0;32mI (450139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (450139) AGUARDANDO: Aguardando...[0m
+[0;32mI (450749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (451739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (451739) AGUARDANDO: Aguardando...[0m
+[0;32mI (453339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (453339) AGUARDANDO: Aguardando...[0m
+[0;32mI (454939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (454939) AGUARDANDO: Aguardando...[0m
+[0;32mI (456539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (456539) AGUARDANDO: Aguardando...[0m
+[0;32mI (458139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (458139) AGUARDANDO: Aguardando...[0m
+[0;32mI (459739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (459739) AGUARDANDO: Aguardando...[0m
+[0;32mI (460749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (461339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (461339) AGUARDANDO: Aguardando...[0m
+[0;32mI (462939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (462939) AGUARDANDO: Aguardando...[0m
+[0;32mI (464539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (464539) AGUARDANDO: Aguardando...[0m
+[0;32mI (466139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (466139) AGUARDANDO: Aguardando...[0m
+[0;32mI (467739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (467739) AGUARDANDO: Aguardando...[0m
+[0;32mI (469339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (469339) AGUARDANDO: Aguardando...[0m
+[0;32mI (470749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (470939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (470939) AGUARDANDO: Aguardando...[0m
+[0;32mI (472539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (472539) AGUARDANDO: Aguardando...[0m
+[0;32mI (474139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (474139) AGUARDANDO: Aguardando...[0m
+[0;32mI (475739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (475739) AGUARDANDO: Aguardando...[0m
+[0;32mI (477339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (477339) AGUARDANDO: Aguardando...[0m
+[0;32mI (478939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (478939) AGUARDANDO: Aguardando...[0m
+[0;32mI (480539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (480539) AGUARDANDO: Aguardando...[0m
+[0;32mI (480749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (482139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (482139) AGUARDANDO: Aguardando...[0m
+[0;32mI (483739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (483739) AGUARDANDO: Aguardando...[0m
+[0;32mI (485339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (485339) AGUARDANDO: Aguardando...[0m
+[0;32mI (486939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (486939) AGUARDANDO: Aguardando...[0m
+[0;32mI (488539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (488539) AGUARDANDO: Aguardando...[0m
+[0;32mI (490139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (490139) AGUARDANDO: Aguardando...[0m
+[0;32mI (490749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (491739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (491739) AGUARDANDO: Aguardando...[0m
+[0;32mI (493339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (493339) AGUARDANDO: Aguardando...[0m
+[0;32mI (494939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (494939) AGUARDANDO: Aguardando...[0m
+[0;32mI (496539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (496539) AGUARDANDO: Aguardando...[0m
+[0;32mI (498139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (498139) AGUARDANDO: Aguardando...[0m
+[0;32mI (499739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (499739) AGUARDANDO: Aguardando...[0m
+[0;32mI (500749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (501339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (501339) AGUARDANDO: Aguardando...[0m
+[0;32mI (502939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (502939) AGUARDANDO: Aguardando...[0m
+[0;32mI (504539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (504539) AGUARDANDO: Aguardando...[0m
+[0;32mI (506139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (506139) AGUARDANDO: Aguardando...[0m
+[0;32mI (507739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (507739) AGUARDANDO: Aguardando...[0m
+[0;32mI (509339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (509339) AGUARDANDO: Aguardando...[0m
+[0;32mI (510749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (510939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (510939) AGUARDANDO: Aguardando...[0m
+[0;32mI (512539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (512539) AGUARDANDO: Aguardando...[0m
+[0;32mI (514139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (514139) AGUARDANDO: Aguardando...[0m
+[0;32mI (515739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (515739) AGUARDANDO: Aguardando...[0m
+[0;32mI (517339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (517339) AGUARDANDO: Aguardando...[0m
+[0;32mI (518939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (518939) AGUARDANDO: Aguardando...[0m
+[0;32mI (520539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (520539) AGUARDANDO: Aguardando...[0m
+[0;32mI (520749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (522139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (522139) AGUARDANDO: Aguardando...[0m
+[0;32mI (523739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (523739) AGUARDANDO: Aguardando...[0m
+[0;32mI (525339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (525339) AGUARDANDO: Aguardando...[0m
+[0;32mI (526939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (526939) AGUARDANDO: Aguardando...[0m
+[0;32mI (528539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (528539) AGUARDANDO: Aguardando...[0m
+[0;32mI (530139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (530139) AGUARDANDO: Aguardando...[0m
+[0;32mI (530749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (531739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (531739) AGUARDANDO: Aguardando...[0m
+[0;32mI (533339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (533339) AGUARDANDO: Aguardando...[0m
+[0;32mI (534939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (534939) AGUARDANDO: Aguardando...[0m
+[0;32mI (536539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (536539) AGUARDANDO: Aguardando...[0m
+[0;32mI (538139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (538139) AGUARDANDO: Aguardando...[0m
+[0;32mI (539739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (539739) AGUARDANDO: Aguardando...[0m
+[0;32mI (540749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (541339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (541339) AGUARDANDO: Aguardando...[0m
+[0;32mI (542939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (542939) AGUARDANDO: Aguardando...[0m
+[0;32mI (544539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (544539) AGUARDANDO: Aguardando...[0m
+[0;32mI (546139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (546139) AGUARDANDO: Aguardando...[0m
+[0;32mI (547739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (547739) AGUARDANDO: Aguardando...[0m
+[0;32mI (549339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (549339) AGUARDANDO: Aguardando...[0m
+[0;32mI (550749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (550939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (550939) AGUARDANDO: Aguardando...[0m
+[0;32mI (552539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (552539) AGUARDANDO: Aguardando...[0m
+[0;32mI (554139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (554139) AGUARDANDO: Aguardando...[0m
+[0;32mI (555739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (555739) AGUARDANDO: Aguardando...[0m
+[0;32mI (557339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (557339) AGUARDANDO: Aguardando...[0m
+[0;32mI (558939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (558939) AGUARDANDO: Aguardando...[0m
+[0;32mI (560539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (560539) AGUARDANDO: Aguardando...[0m
+[0;32mI (560749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (562139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (562139) AGUARDANDO: Aguardando...[0m
+[0;32mI (563739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (563739) AGUARDANDO: Aguardando...[0m
+[0;32mI (565339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (565339) AGUARDANDO: Aguardando...[0m
+[0;32mI (566939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (566939) AGUARDANDO: Aguardando...[0m
+[0;32mI (568539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (568539) AGUARDANDO: Aguardando...[0m
+[0;32mI (570139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (570139) AGUARDANDO: Aguardando...[0m
+[0;32mI (570749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (571739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (571739) AGUARDANDO: Aguardando...[0m
+[0;32mI (573339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (573339) AGUARDANDO: Aguardando...[0m
+[0;32mI (574939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (574939) AGUARDANDO: Aguardando...[0m
+[0;32mI (576539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (576539) AGUARDANDO: Aguardando...[0m
+[0;32mI (578139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (578139) AGUARDANDO: Aguardando...[0m
+[0;32mI (579739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (579739) AGUARDANDO: Aguardando...[0m
+[0;32mI (580749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (581339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (581339) AGUARDANDO: Aguardando...[0m
+[0;32mI (582939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (582939) AGUARDANDO: Aguardando...[0m
+[0;32mI (584539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (584539) AGUARDANDO: Aguardando...[0m
+[0;32mI (586139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (586139) AGUARDANDO: Aguardando...[0m
+[0;32mI (587739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (587739) AGUARDANDO: Aguardando...[0m
+[0;32mI (589339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (589339) AGUARDANDO: Aguardando...[0m
+[0;32mI (590749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (590939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (590939) AGUARDANDO: Aguardando...[0m
+[0;32mI (592539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (592539) AGUARDANDO: Aguardando...[0m
+[0;32mI (594139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (594139) AGUARDANDO: Aguardando...[0m
+[0;32mI (595739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (595739) AGUARDANDO: Aguardando...[0m
+[0;32mI (597339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (597339) AGUARDANDO: Aguardando...[0m
+[0;32mI (598939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (598939) AGUARDANDO: Aguardando...[0m
+[0;32mI (600539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (600539) AGUARDANDO: Aguardando...[0m
+[0;32mI (600749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (602139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (602139) AGUARDANDO: Aguardando...[0m
+[0;32mI (603739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (603739) AGUARDANDO: Aguardando...[0m
+[0;32mI (605339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (605339) AGUARDANDO: Aguardando...[0m
+[0;32mI (606939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (606939) AGUARDANDO: Aguardando...[0m
+[0;32mI (608539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (608539) AGUARDANDO: Aguardando...[0m
+[0;32mI (610139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (610139) AGUARDANDO: Aguardando...[0m
+[0;32mI (610749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (611739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (611739) AGUARDANDO: Aguardando...[0m
+[0;32mI (613339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (613339) AGUARDANDO: Aguardando...[0m
+[0;32mI (614939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (614939) AGUARDANDO: Aguardando...[0m
+[0;32mI (616539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (616539) AGUARDANDO: Aguardando...[0m
+[0;32mI (618139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (618139) AGUARDANDO: Aguardando...[0m
+[0;32mI (619739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (619739) AGUARDANDO: Aguardando...[0m
+[0;32mI (620749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (621339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (621339) AGUARDANDO: Aguardando...[0m
+[0;32mI (622939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (622939) AGUARDANDO: Aguardando...[0m
+[0;32mI (624539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (624539) AGUARDANDO: Aguardando...[0m
+[0;32mI (626139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (626139) AGUARDANDO: Aguardando...[0m
+[0;32mI (627739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (627739) AGUARDANDO: Aguardando...[0m
+[0;32mI (629339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (629339) AGUARDANDO: Aguardando...[0m
+[0;32mI (630749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (630939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (630939) AGUARDANDO: Aguardando...[0m
+[0;32mI (632539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (632539) AGUARDANDO: Aguardando...[0m
+[0;32mI (634139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (634139) AGUARDANDO: Aguardando...[0m
+[0;32mI (635739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (635739) AGUARDANDO: Aguardando...[0m
+[0;32mI (637339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (637339) AGUARDANDO: Aguardando...[0m
+[0;32mI (638939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (638939) AGUARDANDO: Aguardando...[0m
+[0;32mI (640539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (640539) AGUARDANDO: Aguardando...[0m
+[0;32mI (640749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (642139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (642139) AGUARDANDO: Aguardando...[0m
+[0;32mI (643739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (643739) AGUARDANDO: Aguardando...[0m
+[0;32mI (645339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (645339) AGUARDANDO: Aguardando...[0m
+[0;32mI (646939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (646939) AGUARDANDO: Aguardando...[0m
+[0;32mI (648539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (648539) AGUARDANDO: Aguardando...[0m
+[0;32mI (650139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (650139) AGUARDANDO: Aguardando...[0m
+[0;32mI (650749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (651739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (651739) AGUARDANDO: Aguardando...[0m
+[0;32mI (653339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (653339) AGUARDANDO: Aguardando...[0m
+[0;32mI (654939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (654939) AGUARDANDO: Aguardando...[0m
+[0;32mI (656539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (656539) AGUARDANDO: Aguardando...[0m
+[0;32mI (658139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (658139) AGUARDANDO: Aguardando...[0m
+[0;32mI (659739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (659739) AGUARDANDO: Aguardando...[0m
+[0;32mI (660749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (661339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (661339) AGUARDANDO: Aguardando...[0m
+[0;32mI (662939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (662939) AGUARDANDO: Aguardando...[0m
+[0;32mI (664539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (664539) AGUARDANDO: Aguardando...[0m
+[0;32mI (666139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (666139) AGUARDANDO: Aguardando...[0m
+[0;32mI (667739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (667739) AGUARDANDO: Aguardando...[0m
+[0;32mI (669339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (669339) AGUARDANDO: Aguardando...[0m
+[0;32mI (670749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (670939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (670939) AGUARDANDO: Aguardando...[0m
+[0;32mI (672539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (672539) AGUARDANDO: Aguardando...[0m
+[0;32mI (674139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (674139) AGUARDANDO: Aguardando...[0m
+[0;32mI (675739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (675739) AGUARDANDO: Aguardando...[0m
+[0;32mI (677339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (677339) AGUARDANDO: Aguardando...[0m
+[0;32mI (678939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (678939) AGUARDANDO: Aguardando...[0m
+[0;32mI (680539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (680539) AGUARDANDO: Aguardando...[0m
+[0;32mI (680749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (682139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (682139) AGUARDANDO: Aguardando...[0m
+[0;32mI (683739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (683739) AGUARDANDO: Aguardando...[0m
+[0;32mI (685339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (685339) AGUARDANDO: Aguardando...[0m
+[0;32mI (686939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (686939) AGUARDANDO: Aguardando...[0m
+[0;32mI (688539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (688539) AGUARDANDO: Aguardando...[0m
+[0;32mI (690139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (690139) AGUARDANDO: Aguardando...[0m
+[0;32mI (690749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (691739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (691739) AGUARDANDO: Aguardando...[0m
+[0;32mI (693339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (693339) AGUARDANDO: Aguardando...[0m
+[0;32mI (694939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (694939) AGUARDANDO: Aguardando...[0m
+[0;32mI (696539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (696539) AGUARDANDO: Aguardando...[0m
+[0;32mI (698139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (698139) AGUARDANDO: Aguardando...[0m
+[0;32mI (699739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (699739) AGUARDANDO: Aguardando...[0m
+[0;32mI (700749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (701339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (701339) AGUARDANDO: Aguardando...[0m
+[0;32mI (702939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (702939) AGUARDANDO: Aguardando...[0m
+[0;32mI (704539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (704539) AGUARDANDO: Aguardando...[0m
+[0;32mI (706139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (706139) AGUARDANDO: Aguardando...[0m
+[0;32mI (707739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (707739) AGUARDANDO: Aguardando...[0m
+[0;32mI (709339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (709339) AGUARDANDO: Aguardando...[0m
+[0;32mI (710749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (710939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (710939) AGUARDANDO: Aguardando...[0m
+[0;32mI (712539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (712539) AGUARDANDO: Aguardando...[0m
+[0;32mI (714139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (714139) AGUARDANDO: Aguardando...[0m
+[0;32mI (715739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (715739) AGUARDANDO: Aguardando...[0m
+[0;32mI (717339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (717339) AGUARDANDO: Aguardando...[0m
+[0;32mI (718939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (718939) AGUARDANDO: Aguardando...[0m
+[0;32mI (720539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (720539) AGUARDANDO: Aguardando...[0m
+[0;32mI (720749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (722139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (722139) AGUARDANDO: Aguardando...[0m
+[0;32mI (723739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (723739) AGUARDANDO: Aguardando...[0m
+[0;32mI (725339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (725339) AGUARDANDO: Aguardando...[0m
+[0;32mI (726939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (726939) AGUARDANDO: Aguardando...[0m
+[0;32mI (728539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (728539) AGUARDANDO: Aguardando...[0m
+[0;32mI (730139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (730139) AGUARDANDO: Aguardando...[0m
+[0;32mI (730749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (731739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (731739) AGUARDANDO: Aguardando...[0m
+[0;32mI (733339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (733339) AGUARDANDO: Aguardando...[0m
+[0;32mI (734939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (734939) AGUARDANDO: Aguardando...[0m
+[0;32mI (736539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (736539) AGUARDANDO: Aguardando...[0m
+[0;32mI (738139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (738139) AGUARDANDO: Aguardando...[0m
+[0;32mI (739739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (739739) AGUARDANDO: Aguardando...[0m
+[0;32mI (740749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (741339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (741339) AGUARDANDO: Aguardando...[0m
+[0;32mI (742939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (742939) AGUARDANDO: Aguardando...[0m
+[0;32mI (744539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (744539) AGUARDANDO: Aguardando...[0m
+[0;32mI (746139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (746139) AGUARDANDO: Aguardando...[0m
+[0;32mI (747739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (747739) AGUARDANDO: Aguardando...[0m
+[0;32mI (749339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (749339) AGUARDANDO: Aguardando...[0m
+[0;32mI (750749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (750939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (750939) AGUARDANDO: Aguardando...[0m
+[0;32mI (752539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (752539) AGUARDANDO: Aguardando...[0m
+[0;32mI (754139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (754139) AGUARDANDO: Aguardando...[0m
+[0;32mI (755739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (755739) AGUARDANDO: Aguardando...[0m
+[0;32mI (757339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (757339) AGUARDANDO: Aguardando...[0m
+[0;32mI (758939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (758939) AGUARDANDO: Aguardando...[0m
+[0;32mI (760539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (760539) AGUARDANDO: Aguardando...[0m
+[0;32mI (760749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (762139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (762139) AGUARDANDO: Aguardando...[0m
+[0;32mI (763739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (763739) AGUARDANDO: Aguardando...[0m
+[0;32mI (765339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (765339) AGUARDANDO: Aguardando...[0m
+[0;32mI (766939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (766939) AGUARDANDO: Aguardando...[0m
+[0;32mI (768539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (768539) AGUARDANDO: Aguardando...[0m
+[0;32mI (770139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (770139) AGUARDANDO: Aguardando...[0m
+[0;32mI (770749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (771739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (771739) AGUARDANDO: Aguardando...[0m
+[0;32mI (773339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (773339) AGUARDANDO: Aguardando...[0m
+[0;32mI (774939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (774939) AGUARDANDO: Aguardando...[0m
+[0;32mI (776539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (776539) AGUARDANDO: Aguardando...[0m
+[0;32mI (778139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (778139) AGUARDANDO: Aguardando...[0m
+[0;32mI (779739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (779739) AGUARDANDO: Aguardando...[0m
+[0;32mI (780749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (781339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (781339) AGUARDANDO: Aguardando...[0m
+[0;32mI (782939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (782939) AGUARDANDO: Aguardando...[0m
+[0;32mI (784539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (784539) AGUARDANDO: Aguardando...[0m
+[0;32mI (786139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (786139) AGUARDANDO: Aguardando...[0m
+[0;32mI (787739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (787739) AGUARDANDO: Aguardando...[0m
+[0;32mI (789339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (789339) AGUARDANDO: Aguardando...[0m
+[0;32mI (790749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (790939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (790939) AGUARDANDO: Aguardando...[0m
+[0;32mI (792539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (792539) AGUARDANDO: Aguardando...[0m
+[0;32mI (794139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (794139) AGUARDANDO: Aguardando...[0m
+[0;32mI (795739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (795739) AGUARDANDO: Aguardando...[0m
+[0;32mI (797339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (797339) AGUARDANDO: Aguardando...[0m
+[0;32mI (798939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (798939) AGUARDANDO: Aguardando...[0m
+[0;32mI (800539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (800539) AGUARDANDO: Aguardando...[0m
+[0;32mI (800749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (802139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (802139) AGUARDANDO: Aguardando...[0m
+[0;32mI (803739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (803739) AGUARDANDO: Aguardando...[0m
+[0;32mI (805339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (805339) AGUARDANDO: Aguardando...[0m
+[0;32mI (806939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (806939) AGUARDANDO: Aguardando...[0m
+[0;32mI (808539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (808539) AGUARDANDO: Aguardando...[0m
+[0;32mI (810139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (810139) AGUARDANDO: Aguardando...[0m
+[0;32mI (810749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (811739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (811739) AGUARDANDO: Aguardando...[0m
+[0;32mI (813339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (813339) AGUARDANDO: Aguardando...[0m
+[0;32mI (814939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (814939) AGUARDANDO: Aguardando...[0m
+[0;32mI (816539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (816539) AGUARDANDO: Aguardando...[0m
+[0;32mI (818139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (818139) AGUARDANDO: Aguardando...[0m
+[0;32mI (819739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (819739) AGUARDANDO: Aguardando...[0m
+[0;32mI (820749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (821339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (821339) AGUARDANDO: Aguardando...[0m
+[0;32mI (822939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (822939) AGUARDANDO: Aguardando...[0m
+[0;32mI (824539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (824539) AGUARDANDO: Aguardando...[0m
+[0;32mI (826139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (826139) AGUARDANDO: Aguardando...[0m
+[0;32mI (827739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (827739) AGUARDANDO: Aguardando...[0m
+[0;32mI (829339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (829339) AGUARDANDO: Aguardando...[0m
+[0;32mI (830749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (830939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (830939) AGUARDANDO: Aguardando...[0m
+[0;32mI (832539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (832539) AGUARDANDO: Aguardando...[0m
+[0;32mI (834139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (834139) AGUARDANDO: Aguardando...[0m
+[0;32mI (835739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (835739) AGUARDANDO: Aguardando...[0m
+[0;32mI (837339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (837339) AGUARDANDO: Aguardando...[0m
+[0;32mI (838939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (838939) AGUARDANDO: Aguardando...[0m
+[0;32mI (840539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (840539) AGUARDANDO: Aguardando...[0m
+[0;32mI (840749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (842139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (842139) AGUARDANDO: Aguardando...[0m
+[0;32mI (843739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (843739) AGUARDANDO: Aguardando...[0m
+[0;32mI (845339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (845339) AGUARDANDO: Aguardando...[0m
+[0;32mI (846939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (846939) AGUARDANDO: Aguardando...[0m
+[0;32mI (848539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (848539) AGUARDANDO: Aguardando...[0m
+[0;32mI (850139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (850139) AGUARDANDO: Aguardando...[0m
+[0;32mI (850749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (851739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (851739) AGUARDANDO: Aguardando...[0m
+[0;32mI (853339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (853339) AGUARDANDO: Aguardando...[0m
+[0;32mI (854939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (854939) AGUARDANDO: Aguardando...[0m
+[0;32mI (856539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (856539) AGUARDANDO: Aguardando...[0m
+[0;32mI (858139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (858139) AGUARDANDO: Aguardando...[0m
+[0;32mI (859739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (859739) AGUARDANDO: Aguardando...[0m
+[0;32mI (860749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (861339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (861339) AGUARDANDO: Aguardando...[0m
+[0;32mI (862939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (862939) AGUARDANDO: Aguardando...[0m
+[0;32mI (864539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (864539) AGUARDANDO: Aguardando...[0m
+[0;32mI (866139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (866139) AGUARDANDO: Aguardando...[0m
+[0;32mI (867739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (867739) AGUARDANDO: Aguardando...[0m
+[0;32mI (869339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (869339) AGUARDANDO: Aguardando...[0m
+[0;32mI (870749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (870939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (870939) AGUARDANDO: Aguardando...[0m
+[0;32mI (872539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (872539) AGUARDANDO: Aguardando...[0m
+[0;32mI (874139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (874139) AGUARDANDO: Aguardando...[0m
+[0;32mI (875739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (875739) AGUARDANDO: Aguardando...[0m
+[0;32mI (877339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (877339) AGUARDANDO: Aguardando...[0m
+[0;32mI (878939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (878939) AGUARDANDO: Aguardando...[0m
+[0;32mI (880539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (880539) AGUARDANDO: Aguardando...[0m
+[0;32mI (880749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (882139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (882139) AGUARDANDO: Aguardando...[0m
+[0;32mI (883739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (883739) AGUARDANDO: Aguardando...[0m
+[0;32mI (885339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (885339) AGUARDANDO: Aguardando...[0m
+[0;32mI (886939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (886939) AGUARDANDO: Aguardando...[0m
+[0;32mI (888539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (888539) AGUARDANDO: Aguardando...[0m
+[0;32mI (890139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (890139) AGUARDANDO: Aguardando...[0m
+[0;32mI (890749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (891739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (891739) AGUARDANDO: Aguardando...[0m
+[0;32mI (893339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (893339) AGUARDANDO: Aguardando...[0m
+[0;32mI (894939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (894939) AGUARDANDO: Aguardando...[0m
+[0;32mI (896539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (896539) AGUARDANDO: Aguardando...[0m
+[0;32mI (898139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (898139) AGUARDANDO: Aguardando...[0m
+[0;32mI (899739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (899739) AGUARDANDO: Aguardando...[0m
+[0;32mI (900749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (901339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (901339) AGUARDANDO: Aguardando...[0m
+[0;32mI (902939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (902939) AGUARDANDO: Aguardando...[0m
+[0;32mI (904539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (904539) AGUARDANDO: Aguardando...[0m
+[0;32mI (906139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (906139) AGUARDANDO: Aguardando...[0m
+[0;32mI (907739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (907739) AGUARDANDO: Aguardando...[0m
+[0;32mI (909339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (909339) AGUARDANDO: Aguardando...[0m
+[0;32mI (910749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (910939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (910939) AGUARDANDO: Aguardando...[0m
+[0;32mI (912539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (912539) AGUARDANDO: Aguardando...[0m
+[0;32mI (914139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (914139) AGUARDANDO: Aguardando...[0m
+[0;32mI (915739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (915739) AGUARDANDO: Aguardando...[0m
+[0;32mI (917339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (917339) AGUARDANDO: Aguardando...[0m
+[0;32mI (918939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (918939) AGUARDANDO: Aguardando...[0m
+[0;32mI (920539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (920539) AGUARDANDO: Aguardando...[0m
+[0;32mI (920749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (922139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (922139) AGUARDANDO: Aguardando...[0m
+[0;32mI (923739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (923739) AGUARDANDO: Aguardando...[0m
+[0;32mI (925339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (925339) AGUARDANDO: Aguardando...[0m
+[0;32mI (926939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (926939) AGUARDANDO: Aguardando...[0m
+[0;32mI (928539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (928539) AGUARDANDO: Aguardando...[0m
+[0;32mI (930139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (930139) AGUARDANDO: Aguardando...[0m
+[0;32mI (930749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (931739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (931739) AGUARDANDO: Aguardando...[0m
+[0;32mI (933339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (933339) AGUARDANDO: Aguardando...[0m
+[0;32mI (934939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (934939) AGUARDANDO: Aguardando...[0m
+[0;32mI (936539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (936539) AGUARDANDO: Aguardando...[0m
+[0;32mI (938139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (938139) AGUARDANDO: Aguardando...[0m
+[0;32mI (939739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (939739) AGUARDANDO: Aguardando...[0m
+[0;32mI (940749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (941339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (941339) AGUARDANDO: Aguardando...[0m
+[0;32mI (942939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (942939) AGUARDANDO: Aguardando...[0m
+[0;32mI (944539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (944539) AGUARDANDO: Aguardando...[0m
+[0;32mI (946139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (946139) AGUARDANDO: Aguardando...[0m
+[0;32mI (947739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (947739) AGUARDANDO: Aguardando...[0m
+[0;32mI (949339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (949339) AGUARDANDO: Aguardando...[0m
+[0;32mI (950749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (950939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (950939) AGUARDANDO: Aguardando...[0m
+[0;32mI (952539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (952539) AGUARDANDO: Aguardando...[0m
+[0;32mI (954139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (954139) AGUARDANDO: Aguardando...[0m
+[0;32mI (955739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (955739) AGUARDANDO: Aguardando...[0m
+[0;32mI (957339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (957339) AGUARDANDO: Aguardando...[0m
+[0;32mI (958939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (958939) AGUARDANDO: Aguardando...[0m
+[0;32mI (960539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (960539) AGUARDANDO: Aguardando...[0m
+[0;32mI (960749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (962139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (962139) AGUARDANDO: Aguardando...[0m
+[0;32mI (963739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (963739) AGUARDANDO: Aguardando...[0m
+[0;32mI (965339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (965339) AGUARDANDO: Aguardando...[0m
+[0;32mI (966939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (966939) AGUARDANDO: Aguardando...[0m
+[0;32mI (968539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (968539) AGUARDANDO: Aguardando...[0m
+[0;32mI (970139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (970139) AGUARDANDO: Aguardando...[0m
+[0;32mI (970749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (971739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (971739) AGUARDANDO: Aguardando...[0m
+[0;32mI (973339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (973339) AGUARDANDO: Aguardando...[0m
+[0;32mI (974939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (974939) AGUARDANDO: Aguardando...[0m
+[0;32mI (976539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (976539) AGUARDANDO: Aguardando...[0m
+[0;32mI (978139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (978139) AGUARDANDO: Aguardando...[0m
+[0;32mI (979739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (979739) AGUARDANDO: Aguardando...[0m
+[0;32mI (980749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (981339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (981339) AGUARDANDO: Aguardando...[0m
+[0;32mI (982939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (982939) AGUARDANDO: Aguardando...[0m
+[0;32mI (984539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (984539) AGUARDANDO: Aguardando...[0m
+[0;32mI (986139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (986139) AGUARDANDO: Aguardando...[0m
+[0;32mI (987739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (987739) AGUARDANDO: Aguardando...[0m
+[0;32mI (989339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (989339) AGUARDANDO: Aguardando...[0m
+[0;32mI (990749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (990939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (990939) AGUARDANDO: Aguardando...[0m
+[0;32mI (992539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (992539) AGUARDANDO: Aguardando...[0m
+[0;32mI (994139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (994139) AGUARDANDO: Aguardando...[0m
+[0;32mI (995739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (995739) AGUARDANDO: Aguardando...[0m
+[0;32mI (997339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (997339) AGUARDANDO: Aguardando...[0m
+[0;32mI (998939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (998939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1000539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1000539) AGUARDANDO: Aguardando...[0m
+[0;32mI (1000749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1002139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1002139) AGUARDANDO: Aguardando...[0m
+[0;32mI (1003739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1003739) AGUARDANDO: Aguardando...[0m
+[0;32mI (1005339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1005339) AGUARDANDO: Aguardando...[0m
+[0;32mI (1006939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1006939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1008539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1008539) AGUARDANDO: Aguardando...[0m
+[0;32mI (1010139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1010139) AGUARDANDO: Aguardando...[0m
+[0;32mI (1010749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1011739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1011739) AGUARDANDO: Aguardando...[0m
+[0;32mI (1013339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1013339) AGUARDANDO: Aguardando...[0m
+[0;32mI (1014939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1014939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1016539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1016539) AGUARDANDO: Aguardando...[0m
+[0;32mI (1018139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1018139) AGUARDANDO: Aguardando...[0m
+[0;32mI (1019739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1019739) AGUARDANDO: Aguardando...[0m
+[0;32mI (1020749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1021339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1021339) AGUARDANDO: Aguardando...[0m
+[0;32mI (1022939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1022939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1024539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1024539) AGUARDANDO: Aguardando...[0m
+[0;32mI (1026139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1026139) AGUARDANDO: Aguardando...[0m
+[0;32mI (1027739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1027739) AGUARDANDO: Aguardando...[0m
+[0;32mI (1029339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1029339) AGUARDANDO: Aguardando...[0m
+[0;32mI (1030749) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1030939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1030939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1032539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1032539) AGUARDANDO: Aguardando...[0m
+[0;32mI (1034139) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1034139) AGUARDANDO: Aguardando...[0m
+[0;32mI (1035739) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1035739) AGUARDANDO: Aguardando...[0m
+[0;32mI (1037339) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1037339) AGUARDANDO: Aguardando...[0m
+[0;32mI (1038939) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1038939) AGUARDANDO: Aguardando...[0m
+[0;32mI (1040539) STATE_MACHINE: Estado atual: STATE_AWAIT[0m
+[0;32mI (1040539) AGUARDANDO: Aguardando.
