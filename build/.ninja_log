@@ -8,7 +8,7 @@
 20396	25251	7501316611169648	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj	6a0f0aac44a5ac03
 260365	269182	7501319054918185	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj	7eeafd0c1c0f32d1
 1173	1807	7501316384112228	project_elf_src_esp32.c	5f9d252e624c61c8
-618	34614	7502078740047664	build.ninja	ead94f3b15c8523d
+101	25237	7503808021477221	build.ninja	ead94f3b15c8523d
 197001	200260	7501318368309971	bootloader-prefix/src/bootloader-stamp/bootloader-mkdir	c2f317de81bacc36
 1173	1807	7501316384112228	C:/Users/sergi/projetos/weasy-automation/weazy-automation/build/project_elf_src_esp32.c	5f9d252e624c61c8
 48353	55586	7501316916200448	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj	74c7e53654e8d0fc
@@ -199,8 +199,8 @@
 272287	280876	7501319168913331	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj	21f00539013a983c
 272990	282200	7501319176470372	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj	23b5f569dc80cd09
 275419	283990	7501319200779099	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj	b5a98b9e002db168
-464	343610	0	CMakeFiles/menuconfig	a639ba26909fd0ad
-464	343610	0	C:/Users/sergi/projetos/weasy-automation/weazy-automation/build/CMakeFiles/menuconfig	a639ba26909fd0ad
-568	261761	7502078740047664	build.ninja	ead94f3b15c8523d
-1043	211811	0	CMakeFiles/menuconfig	a639ba26909fd0ad
-1043	211811	0	C:/Users/sergi/projetos/weasy-automation/weazy-automation/build/CMakeFiles/menuconfig	a639ba26909fd0ad
+603	67743	0	CMakeFiles/menuconfig	a639ba26909fd0ad
+603	67743	0	C:/Users/sergi/projetos/weasy-automation/weazy-automation/build/CMakeFiles/menuconfig	a639ba26909fd0ad
+108	23189	7503808021477221	build.ninja	ead94f3b15c8523d
+679	360277	0	CMakeFiles/menuconfig	a639ba26909fd0ad
+679	360277	0	C:/Users/sergi/projetos/weasy-automation/weazy-automation/build/CMakeFiles/menuconfig	a639ba26909fd0ad

@@ -1,0 +1,136 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080638
+[0;32mI (31) boot: ESP-IDF 5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 10 2024 15:25:47[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23114h (143636) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0003313c vaddr=3ffb0000 size=03c9ch ( 15516) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=00036de0 vaddr=40080000 size=09238h ( 37432) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88b98h (560024) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c8bc0 vaddr=40089238 size=0d67ch ( 54908) load[0m
+[0;32mI (399) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (399) boot: Disabling RNG early entropy source...[0m
+[0;32mI (411) cpu_start: Multicore app[0m
+[0;32mI (420) cpu_start: Pro cpu start user code[0m
+[0;32mI (420) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (420) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     weazy-automation[0m
+[0;32mI (429) cpu_start: App version:      3ccae97-dirty[0m
+[0;32mI (434) cpu_start: Compile time:     Oct 10 2024 15:14:38[0m
+[0;32mI (440) cpu_start: ELF file SHA256:  92e0c66d1...[0m
+[0;32mI (446) cpu_start: ESP-IDF:          5.2.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (465) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB8310 len 00027CF0 (159 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 400968B4 len 0000974C (37 KiB): IRAM[0m
+[0;32mI (505) spi_flash: detected chip: generic[0m
+[0;32mI (508) spi_flash: flash io: dio[0m
+[0;32mI (513) main_task: Started on CPU0[0m
+[0;32mI (523) main_task: Calling app_main()[0m
+[0;32mI (553) state_machine: Estado atual: STATE_INIT[0m
+[0;32mI (753) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (963) wifi:wifi driver task: 3ffc13e4, prio:23, stack:6656, core=0[0m
+[0;32mI (973) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (973) wifi:wifi certification version: v7.0[0m
+[0;32mI (973) wifi:config NVS flash: enabled[0m
+[0;32mI (973) wifi:config nano formating: disabled[0m
+[0;32mI (983) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (983) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (993) wifi:Init management short buffer num: 32[0m
+[0;32mI (993) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1003) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1003) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1003) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1013) wifi_init: rx ba win: 6[0m
+[0;32mI (1013) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1023) wifi_init: udp mbox: 6[0m
+[0;32mI (1023) wifi_init: tcp mbox: 6[0m
+[0;32mI (1023) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1033) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1033) wifi_init: tcp mss: 1440[0m
+[0;32mI (1043) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1043) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1053) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1143) wifi:mode : sta (88:13:bf:07:c8:84)[0m
+[0;32mI (1143) wifi:enable tsf[0m
+[0;32mI (1143) wifi_manager: Wi-Fi iniciado, conectando-se ao SSID: APARTAMENTO 233 - 2.4G[0m
+[0;32mI (1143) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1183) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1183) wifi:state: init -> auth (b0)[0m
+[0;32mI (1193) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1213) wifi:state: assoc -> run (10)[0m
+[0;33mW (1273) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (1273) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;32mI (1323) wifi:connected with APARTAMENTO 233 - 2.4G, aid = 4, channel 6, BW20, bssid = f4:54:20:ef:29:bf[0m
+[0;32mI (1323) wifi:security: WPA2-PSK, phy: bgn, rssi: -88[0m
+[0;32mI (1323) wifi:pm start, type: 1[0m
+
+[0;32mI (1323) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1393) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1523) wifi:<ba-add>idx:0 (ifx:0, f4:54:20:ef:29:bf), tid:0, ssn:2, winSize:64[0m
+[0;32mI (3333) esp_netif_handlers: sta ip: 192.168.15.5, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (3333) wifi_manager: Conectado com sucesso, IP obtido: 192.168.15.5[0m
+[0;32mI (3453) state_machine: Estado atual: STATE_GET_TIME[0m
+[0;32mI (3453) time_manager: Inicializando SNTP[0m
+[0;32mI (3453) state_machine: Aguardando sincronização de hora (1/15)...[0m
+[0;32mI (4953) state_machine: Aguardando sincronização de hora (2/15)...[0m
+[0;32mI (6023) time_manager: Hora sincronizada[0m
+[0;32mI (6453) state_machine: Hora atual obtida: Thu Oct 10 15:42:53 2024[0m
+[0;32mI (6553) state_machine: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (6553) time_manager: Próximo evento em 67 segundos[0m
+[0;32mI (11153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (21153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (31153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (41153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (51153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (61153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (71153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (73553) time_manager: Water Pump: 1[0m
+[0;32mI (73553) state_machine: Evento está ON, horário agendado atendido: Thu Oct 10 15:44:00 2024[0m
+[0;32mI (73553) state_machine: A task schedule foi suspensa.[0m
+[0;32mI (73653) state_machine: Estado atual: STATE_PUMP_RUN[0m
+[0;32mI (73653) pump_control: GPIO 4 ativado[0m
+[0;32mI (81153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (91153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (101153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (103653) pump_control: GPIO 4 desativado[0m
+[0;32mI (103653) state_machine: Water Pump Flag: 0[0m
+[0;32mI (103753) state_machine: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (103753) time_manager: A task schedule estava suspensa.[0m
+[0;32mI (103753) time_manager: Próximo evento em 150 segundos[0m
+[0;32mI (103753) time_manager: A task schedule foi retomada.[0m
+[0;32mI (111153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (121153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (131153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (141153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (151153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (161153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (171153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (181153) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (

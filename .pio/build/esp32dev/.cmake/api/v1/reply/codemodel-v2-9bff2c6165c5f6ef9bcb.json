@@ -1669,7 +1669,7 @@
 				{
 					"directoryIndex" : 17,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-5ce733ad0278bf6aeda5.json",
+					"jsonFile" : "target-__idf_esp_app_format-63688e5177c33dcae2ff.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -1991,7 +1991,7 @@
 				{
 					"directoryIndex" : 88,
 					"id" : "__idf_src::@2478b13de56d3028f688",
-					"jsonFile" : "target-__idf_src-b2de944707983b00ad5e.json",
+					"jsonFile" : "target-__idf_src-f37565d60fe27f8feea6.json",
 					"name" : "__idf_src",
 					"projectIndex" : 1
 				},
@@ -2047,7 +2047,7 @@
 				{
 					"directoryIndex" : 26,
 					"id" : "__ldgen_output_sections.ld::@874df54e61e20112dfd4",
-					"jsonFile" : "target-__ldgen_output_sections.ld-d675e07a15995273b7cd.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-f3ef79480fd37ec631bd.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 1
 				},
@@ -2355,7 +2355,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "weazy-automation.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-weazy-automation.elf-d9e61a7fdb255a68accd.json",
+					"jsonFile" : "target-weazy-automation.elf-c848e012c5fa053f2b53.json",
 					"name" : "weazy-automation.elf",
 					"projectIndex" : 0
 				}

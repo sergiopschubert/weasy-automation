@@ -5,8 +5,10 @@
 // Definir os estados da máquina
 typedef enum {
     STATE_INIT,      // Estado inicial
-    STATE_GET_TIME,  // Estado que pisca o LED rapidamente
-    STATE_AWAIT,  // Estado que pisca o LED lentamente
+    STATE_GET_TIME,  // Estado que pega o horário da rede e configura o rtc
+    STATE_AWAIT,  // Estado coringa
+    STATE_WAIT_SCHEDULE, // Estado que espera o horário agendado para ligar a mini bomba d'agua
+    STATE_PUMP_RUN, 
     STATE_DONE       // Estado final
 } state_t;
 

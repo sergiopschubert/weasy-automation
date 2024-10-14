@@ -1,8 +1,7 @@
-// main.c
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "nvs_flash.h"
-#include "wifi_manager.h"
+
 #include "led_task.h"
 #include "state_machine.h"
 #include <stdint.h>
@@ -16,12 +15,6 @@ void init_system(void) {
     }
     ESP_ERROR_CHECK(ret);
 
-    // Iniciar a task Wi-Fi
-    wifi_start_task();   
-    while (!is_wifi_connected()){
-        
-    }
-    led_task_init();
 }
 
 void app_main(void) {

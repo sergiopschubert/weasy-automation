@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "weazy-automation",
-    "project_version":    "1",
+    "project_version":    "3ccae97-dirty",
     "project_path":       "C:/Users/sergi/projetos/weasy-automation/weazy-automation",
     "idf_path":           "C:/Users/sergi/.platformio/packages/framework-espidf",
     "build_dir":          "C:/Users/sergi/projetos/weasy-automation/weazy-automation/.pio/build/esp32dev",
@@ -1045,7 +1045,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/sergi/projetos/weasy-automation/weazy-automation/.pio/build/esp32dev/esp-idf/src/libsrc.a",
-            "sources": [ "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/CMakeLists.txt", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/led_task.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/main.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/state_machine.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/time_manager.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/wifi_manager.c" ],
+            "sources": [ "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/CMakeLists.txt", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/firebase_manager.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/led_task.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/main.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/pump_control.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/state_machine.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/time_manager.c", "C:/Users/sergi/projetos/weasy-automation/weazy-automation/src/wifi_manager.c" ],
             "include_dirs": []
         },
         "tcp_transport": {

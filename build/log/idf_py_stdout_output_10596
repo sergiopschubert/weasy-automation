@@ -1,0 +1,681 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080638
+[0;32mI (31) boot: ESP-IDF 5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct  9 2024 18:47:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22a44h (141892) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00032a6c vaddr=3ffb0000 size=03c9ch ( 15516) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=00036710 vaddr=40080000 size=09908h ( 39176) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=87e6ch (556652) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c7e94 vaddr=40089908 size=0cfach ( 53164) load[0m
+[0;32mI (398) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (398) boot: Disabling RNG early entropy source...[0m
+[0;32mI (409) cpu_start: Multicore app[0m
+[0;32mI (418) cpu_start: Pro cpu start user code[0m
+[0;32mI (418) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (418) cpu_start: Application information:[0m
+[0;32mI (421) cpu_start: Project name:     weazy-automation[0m
+[0;32mI (427) cpu_start: App version:      1[0m
+[0;32mI (431) cpu_start: Compile time:     Oct  9 2024 18:38:16[0m
+[0;32mI (437) cpu_start: ELF file SHA256:  4dec7cc08...[0m
+[0;32mI (443) cpu_start: ESP-IDF:          5.2.1[0m
+[0;32mI (448) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (452) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (457) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (462) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (469) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (475) heap_init: At 3FFB8310 len 00027CF0 (159 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (488) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 400968B4 len 0000974C (37 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (505) spi_flash: flash io: dio[0m
+[0;32mI (510) main_task: Started on CPU0[0m
+[0;32mI (520) main_task: Calling app_main()[0m
+[0;32mI (560) wifi:wifi driver task: 3ffc13e4, prio:23, stack:6656, core=0[0m
+[0;32mI (570) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (570) wifi:wifi certification version: v7.0[0m
+[0;32mI (580) wifi:config NVS flash: enabled[0m
+[0;32mI (580) wifi:config nano formating: disabled[0m
+[0;32mI (580) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (580) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (590) wifi:Init management short buffer num: 32[0m
+[0;32mI (590) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (600) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (600) wifi:Init static rx buffer num: 10[0m
+[0;32mI (600) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (620) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5760[0m
+[0;32mI (630) wifi_init: tcp rx win: 5760[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (640) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (650) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (740) wifi:mode : sta (88:13:bf:07:c8:84)[0m
+[0;32mI (740) wifi:enable tsf[0m
+[0;32mI (740) wifi_manager: Wi-Fi iniciado, conectando-se ao SSID: APARTAMENTO 233 - 2.4G[0m
+[0;32mI (740) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (820) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (820) wifi:state: init -> auth (b0)[0m
+[0;32mI (820) wifi:state: auth -> assoc (0)[0m
+[0;32mI (840) wifi:state: assoc -> run (10)[0m
+[0;32mI (970) wifi:connected with APARTAMENTO 233 - 2.4G, aid = 4, channel 6, BW20, bssid = f4:54:20:ef:29:bf[0m
+[0;32mI (970) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (980) wifi:pm start, type: 1[0m
+
+[0;32mI (980) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1020) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1350) wifi:<ba-add>idx:0 (ifx:0, f4:54:20:ef:29:bf), tid:0, ssn:2, winSize:64[0m
+[0;32mI (3490) esp_netif_handlers: sta ip: 192.168.15.5, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (3490) wifi_manager: Conectado com sucesso, IP obtido: 192.168.15.5[0m
+[0;32mI (3490) state_machine: Estado: INIT[0m
+[0;32mI (3600) STATE_MACHINE: Estado atual: STATE_GET_TIME[0m
+[0;32mI (3600) state_machine: Estado: GET_TIME[0m
+[0;32mI (3600) time_manager: Inicializando SNTP[0m
+[0;32mI (3600) state_machine: Aguardando sincronização de hora (1/15)...[0m
+[0;32mI (5110) state_machine: Aguardando sincronização de hora (2/15)...[0m
+[0;32mI (6610) state_machine: Aguardando sincronização de hora (3/15)...[0m
+[0;32mI (7510) time_manager: Hora sincronizada[0m
+[0;32mI (8110) state_machine: Hora atual obtida: Thu Oct 10 13:03:30 2024[0m
+[0;32mI (8210) STATE_MACHINE: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (8210) state_machine: Estado: STATE_WAIT_SCHEDULE[0m
+[0;32mI (8210) time_manager: Próximo evento em 30 segundos[0m
+[0;32mI (10750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (20750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (30750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (38210) time_manager: Water Pump: 1[0m
+[0;32mI (38210) state_machine: Evento ON, horário agendado: Thu Oct 10 13:04:00 2024[0m
+[0;32mI (38210) state_machine: Water Pump: 0[0m
+[0;32mI (38210) state_machine: A task schedule foi suspensa.[0m
+[0;32mI (39820) STATE_MACHINE: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (39820) state_machine: Estado: STATE_WAIT_SCHEDULE[0m
+[0;32mI (39820) time_manager: A task schedule estava suspensa.[0m
+[0;32mI (39820) time_manager: Próximo evento em 118 segundos[0m
+[0;32mI (39830) time_manager: A task schedule foi retomada.[0m
+[0;32mI (40750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (50750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (60750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (70750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (80750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (90750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (157830) time_manager: Water Pump: 1[0m
+[0;32mI (157830) state_machine: Evento ON, horário agendado: Thu Oct 10 13:06:00 2024[0m
+[0;32mI (157830) state_machine: Water Pump: 0[0m
+[0;32mI (157830) state_machine: A task schedule foi suspensa.[0m
+[0;32mI (159440) STATE_MACHINE: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (159440) state_machine: Estado: STATE_WAIT_SCHEDULE[0m
+[0;32mI (159440) time_manager: A task schedule estava suspensa.[0m
+[0;32mI (159440) time_manager: Próximo evento em 119 segundos[0m
+[0;32mI (159450) time_manager: A task schedule foi retomada.[0m
+[0;32mI (160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (278450) time_manager: Water Pump: 1[0m
+[0;32mI (278450) state_machine: Evento ON, horário agendado: Thu Oct 10 13:08:00 2024[0m
+[0;32mI (278450) state_machine: Water Pump: 0[0m
+[0;32mI (278450) state_machine: A task schedule foi suspensa.[0m
+[0;32mI (280060) STATE_MACHINE: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (280060) state_machine: Estado: STATE_WAIT_SCHEDULE[0m
+[0;32mI (280060) time_manager: A task schedule estava suspensa.[0m
+[0;32mI (280060) time_manager: Próximo evento em 118 segundos[0m
+[0;32mI (280070) time_manager: A task schedule foi retomada.[0m
+[0;32mI (280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (380750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (390750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (398070) time_manager: Water Pump: 1[0m
+[0;32mI (398070) state_machine: Evento ON, horário agendado: Thu Oct 10 13:10:00 2024[0m
+[0;32mI (398070) state_machine: Water Pump: 0[0m
+[0;32mI (398070) state_machine: A task schedule foi suspensa.[0m
+[0;32mI (399680) STATE_MACHINE: Estado atual: STATE_WAIT_SCHEDULE[0m
+[0;32mI (399680) state_machine: Estado: STATE_WAIT_SCHEDULE[0m
+[0;32mI (399680) time_manager: A task schedule estava suspensa.[0m
+[0;32mI (399680) time_manager: Próximo evento em 17399 segundos[0m
+[0;32mI (399690) time_manager: A task schedule foi retomada.[0m
+[0;32mI (400750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (410750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (420750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (430750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (440750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (450750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (460750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (470750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (480750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (490750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (500750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (510750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (520750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (530750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (540750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (550750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (560750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (570750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (580750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (590750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (600750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (610750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (620750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (630750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (640750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (650750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (660750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (670750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (680750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (690750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (700750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (710750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (720750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (730750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (740750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (750750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (760750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (770750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (780750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (790750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (800750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (810750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (820750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (830750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (840750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (850750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (860750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (870750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (880750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (890750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (900750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (910750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (920750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (930750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (940750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (950750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (960750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (970750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (980750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (990750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1000750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1010750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1020750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1030750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1040750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1050750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1060750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1070750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1080750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1090750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1380750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1390750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1400750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1410750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1420750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1430750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1440750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1450750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1460750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1470750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1480750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1490750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1500750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1510750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1520750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1530750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1540750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1550750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1560750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1570750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1580750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1590750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1600750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1610750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1620750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1630750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1640750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1650750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1660750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1670750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1680750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1690750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1700750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1710750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1720750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1730750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1740750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1750750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1760750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1770750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1780750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1790750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1800750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1810750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1820750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1830750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1840750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1850750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1860750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1870750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1880750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1890750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1900750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1910750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1920750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1930750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1940750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1950750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1960750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1970750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1980750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (1990750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2000750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2010750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2020750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2030750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2040750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2050750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2060750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2070750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2080750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2090750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2380750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2390750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2400750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2410750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2420750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2430750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2440750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2450750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2460750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2470750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2480750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2490750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2500750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2510750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2520750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2530750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2540750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2550750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2560750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2570750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2580750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2590750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2600750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2610750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2620750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2630750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2640750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2650750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2660750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2670750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2680750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2690750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2700750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2710750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2720750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2730750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2740750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2750750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2760750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2770750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2780750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2790750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2800750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2810750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2820750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2830750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2840750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2850750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2860750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2870750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2880750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2890750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2900750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2910750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2920750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2930750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2940750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2950750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2960750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2970750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2980750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (2990750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3000750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3010750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3020750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3030750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3040750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3050750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3060750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3070750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3080750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3090750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3380750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3390750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3400750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3410750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3420750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3430750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3440750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3450750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3460750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3470750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3480750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3490750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3500750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3510750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3520750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3530750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3540750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3550750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3560750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3570750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3580750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3590750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3600750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3607730) time_manager: Hora sincronizada[0m
+[0;32mI (3610750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3620750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3630750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3640750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3650750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3660750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3670750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3680750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3690750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3700750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3710750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3720750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3730750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3740750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3750750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3760750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3770750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3780750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3790750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3800750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3810750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3820750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3830750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3840750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3850750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3860750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3870750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3880750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3890750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3900750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3910750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3920750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3930750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3940750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3950750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3960750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3970750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3980750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (3990750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4000750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4010750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4020750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4030750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4040750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4050750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4060750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4070750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4080750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4090750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4380750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4390750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4400750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4410750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4420750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4430750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4440750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4450750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4460750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4470750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4480750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4490750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4500750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4510750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4520750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4530750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4540750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4550750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4560750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4570750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4580750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4590750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4600750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4610750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4620750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4630750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4640750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4650750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4660750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4670750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4680750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4690750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4700750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4710750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4720750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4730750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4740750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4750750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4760750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4770750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4780750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4790750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4800750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4810750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4820750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4830750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4840750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4850750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4860750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4870750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4880750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4890750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4900750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4910750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4920750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4930750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4940750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4950750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4960750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4970750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4980750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (4990750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5000750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5010750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5020750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5030750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5040750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5050750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5060750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5070750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5080750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5090750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5100750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5110750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5120750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5130750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5140750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5150750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5160750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5170750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5180750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5190750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5200750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5210750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5220750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5230750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5240750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5250750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5260750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5270750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5280750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5290750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5300750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5310750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5320750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5330750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5340750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5350750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5360750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5370750) wifi_manager: Wi-Fi Task rodando...[0m
+[0;32mI (5380750) wifi_manager: Wi-Fi Task rodando...

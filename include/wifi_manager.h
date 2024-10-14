@@ -12,6 +12,7 @@ void wifi_start_task(void);
 
 bool is_wifi_connected(void);
 
+
 // extern bool wifi_connected;
 
 #endif // WIFI_MANAGER_H
